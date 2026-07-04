@@ -259,7 +259,91 @@
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 60% 40%, black 0%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 60% at 60% 40%, black 0%, transparent 75%);
 }
- 
+ .modal-screenshot {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.modal-screenshot-gallery {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    margin: 1.5rem 0;
+}
+
+.modal-gallery-image {
+    width: 280px;
+    border-radius: 14px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.gallery-viewer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #111;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+}
+
+.gallery-btn-left {
+  left: 12px;
+}
+
+.gallery-btn-right {
+  right: 12px;
+}
+
+.gallery-dots {
+  position: absolute;
+  bottom: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.gallery-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.gallery-dot.active {
+  background: white;
+}
 .hero-orb {
   position: absolute;
   z-index: -1;

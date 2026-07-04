@@ -8,31 +8,11 @@ import "./Portfolio.css";
 const PROJECTS = [
   {
     num: "01",
-    tags: ["React", "API", "MySQL"],
-    githubUrl: "https://github.com/yourusername/tournament-manager",
-    liveUrl: "https://your-live-demo.com",
-    en: {
-      title: "Tournament Manager",
-      shortDesc:
-        "A React app for managing tournaments, players, rounds, matches, and standings with real-time updates.",
-      longDesc:
-        "Built a full-featured tournament management system with bracket generation, live standings, and match scheduling. The backend exposes a REST API consumed by the React frontend, with MySQL storing all tournament data. Features include player seeding, round-robin and knockout formats, and printable standings.",
-      role: "Full Stack Developer",
-      duration: "3 months",
-    },
-    bm: {
-      title: "Pengurus Kejohanan",
-      shortDesc:
-        "Aplikasi React untuk menguruskan kejohanan, pemain, pusingan, perlawanan, dan kedudukan dengan kemas kini masa nyata.",
-      longDesc:
-        "Membina sistem pengurusan kejohanan lengkap dengan penjanaan bracket, kedudukan langsung, dan penjadualan perlawanan. Backend mendedahkan REST API yang digunakan oleh frontend React, dengan MySQL menyimpan semua data kejohanan. Ciri termasuk seeding pemain, format round-robin dan knockout, serta kedudukan yang boleh dicetak.",
-      role: "Pembangun Full Stack",
-      duration: "3 bulan",
-    },
-  },
-  {
-    num: "02",
-    tags: ["JavaScript", "C#", "MySQL"],
+    tags: ["JavaScript", "C#", "MySQL",],
+    images: [
+      "/portfolio-dar/images/gamApp/Gam_app_04.jpg",
+        "/portfolio-dar/images/gamApp/Gam_app_03.jpg",
+    ],
     githubUrl: "https://github.com/yourusername/fleet-dashboard",
     liveUrl: null,
     en: {
@@ -55,9 +35,14 @@ const PROJECTS = [
     },
   },
   {
-    num: "03",
+    num: "02",
     tags: ["Flutter", "C#", "MySQL"],
+        images: [
+           "/portfolio-dar/images/gamApp/Gam_app_02.jpg",
+              "/portfolio-dar/images/gamApp/Gam_app_01.jpg",
+    ],
     githubUrl: "https://github.com/yourusername/vehicle-checklist",
+
     liveUrl: null,
     en: {
       title: "Vehicle Checklist App",
@@ -95,6 +80,7 @@ const LANG = {
     projectsShipped: "Projects shipped",
     stackDev: "Stack developer",
     navProjects: "Projects",
+    navPassion: "Passion Projects",
     navSkills: "Skills",
     navAbout: "About",
     navContact: "Contact",
@@ -153,6 +139,7 @@ const LANG = {
     projectsShipped: "Projek dihantar",
     stackDev: "Pembangun Stack",
     navProjects: "Projek",
+    navPassion: "Projek Peribadi",
     navSkills: "Kemahiran",
     navAbout: "Tentang",
     navContact: "Hubungi",
@@ -218,7 +205,111 @@ const greetings = [
   "Bonjour, je suis",
 ];
 
+const PASSION_PROJECTS = [
+  {
+    num: "P01",
+    tags: ["Flutter"],
+    images: [
+      "/portfolio-dar/images/japaneseApp/Japanese_app_01.jpg",
+        "/portfolio-dar/images/japaneseApp/Japanese_app_02.jpg",
+           "/portfolio-dar/images/japaneseApp/Japanese_app_03.jpg",
+              "/portfolio-dar/images/japaneseApp/Japanese_app_04.jpg",
+    ],
+    githubUrl: "https://github.com/yourusername/japanese-learning-app",
+    liveUrl: null,
+    en: {
+      title: "Japanese Learning App",
+      shortDesc:
+        "A cross-platform mobile application that helps learners build vocabulary, study kanji, and improve Japanese reading skills.",
 
+      longDesc:
+        "Developed a Flutter-based Japanese learning application focused on practical language acquisition rather than simple flashcards. The app organizes vocabulary and kanji by JLPT level, supports offline learning, and is designed to grow through downloadable content and future cloud synchronization. The project was inspired by my own journey learning Japanese and continues to evolve as I discover better ways to study.",
+
+      role: "Full Stack Developer",
+      duration: "Ongoing",
+    },
+
+    bm: {
+      title: "Aplikasi Pembelajaran Bahasa Jepun",
+
+      shortDesc:
+        "Aplikasi mudah alih merentas platform untuk membantu pengguna mempelajari kosa kata, kanji dan meningkatkan kemahiran membaca bahasa Jepun.",
+
+      longDesc:
+        "Membangunkan aplikasi Flutter yang memfokuskan kepada pembelajaran bahasa Jepun secara praktikal. Aplikasi ini mengurus kosa kata dan kanji mengikut tahap JLPT, menyokong pembelajaran luar talian, dan direka supaya kandungan baharu boleh ditambah melalui kemas kini pada masa hadapan. Projek ini bermula daripada pengalaman saya sendiri mempelajari bahasa Jepun.",
+
+      role: "Pembangun Full Stack",
+      duration: "Sedang Dibangunkan",
+    },
+  },
+
+  {
+    num: "P02",
+    tags: [
+      "Flutter",
+      "GitHub Pages",
+      "JSON",
+      "Offline Storage",
+      "Image Caching",
+    ],
+    images: [
+      "/portfolio-dar/images/hololiveApp/holo_app_01.jpg",
+        "/portfolio-dar/images/hololiveApp/holo_app_02.jpg",
+    ],
+    githubUrl: "https://github.com/yourusername/hololive-card-app",
+    liveUrl: null,
+
+    en: {
+      title: "Hololive Card Database",
+
+      shortDesc:
+        "A companion app for the Hololive Official Card Game that automatically downloads new card sets without requiring application updates.",
+
+      longDesc:
+        "Designed and built a scalable card database application that separates application releases from content updates. Card information and images are hosted on GitHub Pages, while the app downloads manifests, compares versions, fetches only new data, and stores everything locally for offline use. This architecture allows new card expansions to be supported without publishing a new version of the application.",
+
+      role: "Full Stack Developer",
+      duration: "Ongoing",
+    },
+
+    bm: {
+      title: "Pangkalan Data Kad Hololive",
+
+      shortDesc:
+        "Aplikasi pendamping untuk Hololive Official Card Game yang memuat turun set kad baharu tanpa memerlukan kemas kini aplikasi.",
+
+      longDesc:
+        "Mereka bentuk aplikasi pangkalan data kad yang memisahkan kemas kini kandungan daripada keluaran aplikasi. Maklumat kad dan imej dihoskan melalui GitHub Pages, manakala aplikasi memuat turun manifest, membandingkan versi, memuat turun hanya data baharu dan menyimpannya secara luar talian. Seni bina ini membolehkan set kad baharu ditambah tanpa menerbitkan versi aplikasi yang baharu.",
+
+      role: "Pembangun Full Stack",
+      duration: "Sedang Dibangunkan",
+    },
+  },
+    {
+    num: "03",
+    tags: ["React", "API", "MySQL"],
+    githubUrl: "https://github.com/yourusername/tournament-manager",
+    liveUrl: "https://your-live-demo.com",
+    en: {
+      title: "Tournament Manager",
+      shortDesc:
+        "A React app for managing tournaments, players, rounds, matches, and standings with real-time updates.",
+      longDesc:
+        "Built a full-featured tournament management system with bracket generation, live standings, and match scheduling. The backend exposes a REST API consumed by the React frontend, with MySQL storing all tournament data. Features include player seeding, round-robin and knockout formats, and printable standings.",
+      role: "Full Stack Developer",
+      duration: "3 months",
+    },
+    bm: {
+      title: "Pengurus Kejohanan",
+      shortDesc:
+        "Aplikasi React untuk menguruskan kejohanan, pemain, pusingan, perlawanan, dan kedudukan dengan kemas kini masa nyata.",
+      longDesc:
+        "Membina sistem pengurusan kejohanan lengkap dengan penjanaan bracket, kedudukan langsung, dan penjadualan perlawanan. Backend mendedahkan REST API yang digunakan oleh frontend React, dengan MySQL menyimpan semua data kejohanan. Ciri termasuk seeding pemain, format round-robin dan knockout, serta kedudukan yang boleh dicetak.",
+      role: "Pembangun Full Stack",
+      duration: "3 bulan",
+    },
+  },
+];
 
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -263,6 +354,7 @@ export default function Portfolio() {
         <div className="logo">dar.dev</div>
         <div className="nav-links">
           <a href="#projects">{t.navProjects}</a>
+          <a href="#passion">{t.navPassion}</a>
           <a href="#skills">{t.navSkills}</a>
           <a href="#about">{t.navAbout}</a>
           <a href="#contact">{t.navContact}</a>
@@ -333,6 +425,27 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+      <section className="passion-section" id="passion">
+  <div className="observe" ref={addRef}>
+    <div className="section-label">Passion Projects</div>
+
+    <h2>
+      Built <span>outside of work</span>
+    </h2>
+
+    <div className="projects-grid">
+      {PASSION_PROJECTS.map((proj, i) => (
+        <ProjectCard
+          key={i}
+          proj={proj}
+          lang={lang}
+          viewDetails={t.viewDetails}
+          onOpen={() => setActiveProject(proj)}
+        />
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section className="about-section" id="about">
@@ -422,12 +535,23 @@ function Hero() {
 // ─────────────────────────────────────────────────────────────────────────────
 function ProjectModal({ proj, lang, t, onClose }) {
   const p = proj[lang];
+  const [imageIndex, setImageIndex] = useState(0);
 
+  const images = proj.images || [];
   // Close on backdrop click
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) onClose();
   };
 
+const nextImage = () => {
+  setImageIndex((prev) => (prev + 1) % images.length);
+};
+
+const prevImage = () => {
+  setImageIndex((prev) =>
+    prev === 0 ? images.length - 1 : prev - 1
+  );
+};
   // Close on Escape
   useEffect(() => {
     const handler = (e) => { if (e.key === "Escape") onClose(); };
@@ -448,13 +572,51 @@ function ProjectModal({ proj, lang, t, onClose }) {
         </div>
 
         {/* Screenshot placeholder */}
-        <div className="modal-screenshot">
-          <div className="screenshot-placeholder">
-            <div className="screenshot-icon">⬛</div>
-            <p>Add your screenshot here</p>
-            <p className="screenshot-hint">Replace <code>.modal-screenshot</code> with an <code>&lt;img&gt;</code> tag</p>
-          </div>
-        </div>
+<div className="modal-screenshot">
+  {images.length > 0 ? (
+    <div className="gallery-viewer">
+      <button
+        className="gallery-btn gallery-btn-left"
+        onClick={prevImage}
+        aria-label="Previous image"
+      >
+        ‹
+      </button>
+
+      <img
+        src={images[imageIndex]}
+        alt={`${p.title} screenshot ${imageIndex + 1}`}
+        className="modal-image"
+      />
+
+      <button
+        className="gallery-btn gallery-btn-right"
+        onClick={nextImage}
+        aria-label="Next image"
+      >
+        ›
+      </button>
+
+      <div className="gallery-dots">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`gallery-dot ${
+              index === imageIndex ? "active" : ""
+            }`}
+            onClick={() => setImageIndex(index)}
+            aria-label={`Go to image ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  ) : (
+    <div className="screenshot-placeholder">
+      <div className="screenshot-icon">⬛</div>
+      <p>Add your screenshot here</p>
+    </div>
+  )}
+</div>
 
         {/* Meta row */}
         <div className="modal-meta">
