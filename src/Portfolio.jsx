@@ -368,8 +368,8 @@ export default function Portfolio() {
           <button className="toggle-btn theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle theme">
             {dark ? "☀" : "☾"}
           </button>
-          <a href="/portfolio-dar/DarwisyHakim_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">{t.viewResume}</a>
-          <a href="/portfolio-dar/DarwisyHakim_Resume.pdf" download className="btn btn-solid">{t.download}</a>
+          <a href="DarwisyHakim_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">{t.viewResume}</a>
+          <a href="DarwisyHakim_Resume.pdf" download className="btn btn-solid">{t.download}</a>
         </div>
       </nav>
 
