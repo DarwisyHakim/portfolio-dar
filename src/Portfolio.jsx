@@ -10,8 +10,8 @@ const PROJECTS = [
     num: "01",
     tags: ["JavaScript", "C#", "MySQL",],
     images: [
-      "/images/gamApp/Gam_app_04.jpg",
-        "/images/gamApp/Gam_app_03.jpg",
+      "/portfolio-dar/images/gamApp/Gam_app_04.jpg",
+        "/portfolio-dar/images/gamApp/Gam_app_03.jpg",
     ],
     githubUrl: "https://github.com/yourusername/fleet-dashboard",
     liveUrl: null,
@@ -38,8 +38,8 @@ const PROJECTS = [
     num: "02",
     tags: ["Flutter", "C#", "MySQL"],
         images: [
-           "/images/gamApp/Gam_app_02.jpg",
-              "/images/gamApp/Gam_app_01.jpg",
+           "/portfolio-dar/images/gamApp/Gam_app_02.jpg",
+              "/portfolio-dar/images/gamApp/Gam_app_01.jpg",
     ],
     githubUrl: "https://github.com/yourusername/vehicle-checklist",
 
@@ -210,10 +210,10 @@ const PASSION_PROJECTS = [
     num: "P01",
     tags: ["Flutter"],
     images: [
-      "/images/japaneseApp/Japanese_app_01.jpg",
-        "/images/japaneseApp/Japanese_app_02.jpg",
-           "/images/japaneseApp/Japanese_app_03.jpg",
-              "/images/japaneseApp/Japanese_app_04.jpg",
+      "/portfolio-dar/images/japaneseApp/Japanese_app_01.jpg",
+        "/portfolio-dar/images/japaneseApp/Japanese_app_02.jpg",
+           "/portfolio-dar/images/japaneseApp/Japanese_app_03.jpg",
+              "/portfolio-dar/images/japaneseApp/Japanese_app_04.jpg",
     ],
     githubUrl: "https://github.com/yourusername/japanese-learning-app",
     liveUrl: null,
@@ -253,8 +253,8 @@ const PASSION_PROJECTS = [
       "Image Caching",
     ],
     images: [
-      "/images/hololiveApp/holo_app_01.jpg",
-        "/images/hololiveApp/holo_app_02.jpg",
+      "/portfolio-dar/images/hololiveApp/holo_app_01.jpg",
+        "/portfolio-dar/images/hololiveApp/holo_app_02.jpg",
     ],
     githubUrl: "https://github.com/yourusername/hololive-card-app",
     liveUrl: null,
