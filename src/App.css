@@ -55,7 +55,31 @@
       scale(0.8);
   }
 }
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
 
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+  background: rgba(255,255,255,0.05);
+}
 #center {
   display: flex;
   flex-direction: column;

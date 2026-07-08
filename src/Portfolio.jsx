@@ -285,7 +285,7 @@ const PASSION_PROJECTS = [
       duration: "Sedang Dibangunkan",
     },
   },
-    {
+    /*{
     num: "03",
     tags: ["React", "API", "MySQL"],
     githubUrl: "https://github.com/yourusername/tournament-manager",
@@ -308,7 +308,7 @@ const PASSION_PROJECTS = [
       role: "Pembangun Full Stack",
       duration: "3 bulan",
     },
-  },
+  },*/
 ];
 
 
@@ -700,70 +700,33 @@ function ContactForm({ t }) {
   };
 
   return (
-    <div className="contact-card">
-      <h3>{t.contactHeading}</h3>
-      <p className="contact-desc">{t.contactDesc}</p>
+  <div className="contact-card">
+    <h3>{t.contactHeading}</h3>
+    <p className="contact-desc">
+      I'm currently open to junior and mid full-stack developer
+      opportunities. Feel free to reach out via email or connect with me on
+      LinkedIn.
+    </p>
 
-      {status === "success" ? (
-        <div className="contact-success">
-          <span className="success-icon">✓</span>
-          {t.contactSuccess}
-        </div>
-      ) : (
-        <form ref={formRef} onSubmit={handleSubmit} className="contact-form" noValidate>
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="cf-name">{t.contactName}</label>
-              <input
-                id="cf-name"
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder={t.contactName}
-                required
-                disabled={status === "sending"}
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="cf-email">{t.contactEmail}</label>
-              <input
-                id="cf-email"
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder={t.contactEmail}
-                required
-                disabled={status === "sending"}
-              />
-            </div>
-          </div>
-          <div className="form-group">
-            <label htmlFor="cf-message">{t.contactMessage}</label>
-            <textarea
-              id="cf-message"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder={t.contactMessage}
-              rows={5}
-              required
-              disabled={status === "sending"}
-            />
-          </div>
-          {status === "error" && (
-            <p className="contact-error">{t.contactError}</p>
-          )}
-          <button
-            type="submit"
-            className="btn btn-solid btn-lg contact-submit"
-            disabled={status === "sending"}
-          >
-            {status === "sending" ? t.contactSending : t.contactSend}
-          </button>
-        </form>
-      )}
+    <div className="contact-links">
+      <a
+        href="mailto:mdarwisyhakim99@gmail.com"
+        className="contact-link"
+      >
+        📧 mdarwisyhakim99@gmail.com
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/darwisy-hakim-78717a190/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-link"
+      >
+        💼 LinkedIn Profile
+      </a>
+
+     
     </div>
-  );
+  </div>
+);
 }
