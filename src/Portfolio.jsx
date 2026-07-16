@@ -12,6 +12,8 @@ const PROJECTS = [
     images: [
       "/images/gamApp/Gam_app_04.jpg",
         "/images/gamApp/Gam_app_03.jpg",
+            "/images/gamApp/Gam_Web_01.png",
+        "/images/gamApp/Gam_Web_02.png",
     ],
     githubUrl: "https://github.com/yourusername/fleet-dashboard",
     liveUrl: null,
@@ -486,17 +488,42 @@ export default function Portfolio() {
 // ─────────────────────────────────────────────────────────────────────────────
 function ProjectCard({ proj, lang, viewDetails, onOpen }) {
   const p = proj[lang];
+
   return (
-    <div className="project-card" onClick={onOpen} role="button" tabIndex={0}
-      onKeyDown={(e) => e.key === "Enter" && onOpen()}>
-      <div className="project-num">{proj.num}</div>
-      <h3>{p.title}</h3>
-      <p>{p.shortDesc}</p>
-      <div className="card-footer">
-        <div className="tags">
-          {proj.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
+    <div
+      className="project-card"
+      onClick={onOpen}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && onOpen()}
+    >
+      {proj.images?.length > 0 && (
+        <div className="project-thumbnail">
+          <img
+            src={proj.images[0]}
+            alt={p.title}
+          />
         </div>
-        <span className="view-details">{viewDetails}</span>
+      )}
+
+      <div className="project-content">
+        <div className="project-num">{proj.num}</div>
+
+        <h3>{p.title}</h3>
+
+        <p>{p.shortDesc}</p>
+
+        <div className="card-footer">
+          <div className="tags">
+            {proj.tags.map(tag => (
+              <span className="tag" key={tag}>{tag}</span>
+            ))}
+          </div>
+
+          <span className="view-details">
+            {viewDetails}
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -640,7 +667,7 @@ const prevImage = () => {
         <p className="modal-desc">{p.longDesc}</p>
 
         {/* Links */}
-        <div className="modal-links">
+        {/*<div className="modal-links">
           {proj.githubUrl && (
             <a href={proj.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
               ⌥ {t.modalGithub}
@@ -651,7 +678,7 @@ const prevImage = () => {
               ↗ {t.modalLive}
             </a>
           )}
-        </div>
+        </div>*/}
       </div>
     </div>
   );
